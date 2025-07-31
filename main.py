@@ -26,16 +26,15 @@ fps = pygame.time.Clock()
 snake_position = [100, 50]
 
 # Initial snake body
-snake_body = [
-        [100, 50],
-        [90, 50],
-        [80,50],
-        [70,50]
-    ]
+snake_body = [[100, 50],
+              [90, 50],
+              [80, 50],
+              [70, 50]
+              ]
+# fruit position
+fruit_position = [random.randrange(1, (window_x//10)) * 10,
+                  random.randrange(1, (window_y//10)) * 10]
 
-# Fruit position
-fruit_position = [random.randrange(1, (window_x//10) * 10),
-                  random.randrange(1, (window_y//10) * 10)]
 fruit_spawn = True
 
 # Default snake direction
@@ -118,7 +117,7 @@ while True:
 
     if not fruit_spawn:
         fruit_position = [random.randrange(1, (window_x//10)) * 10,
-                          random.randrange(1, (widnow_y//10)) * 10]
+                          random.randrange(1, (window_y//10)) * 10]
 
     fruit_spawn = True
     game_window.fill(black)
