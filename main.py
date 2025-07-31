@@ -22,3 +22,22 @@ pygame.display.set_caption('Snake')
 game_window = pygame.display.set_mode((window_x, window_y))
 
 fps = pygame.time.Clock()
+
+snake_position = [100, 50]
+
+# Initial snake body
+snake_body = [
+        [100, 50],
+        [90, 50],
+        [80,50],
+        [70,50]
+    ]
+
+# Fruit position
+fruit_position = [random.randange(1, (window_x//10) * 10),
+                  random.randange(1, (window_y//10) * 10)]
+fruit_spawn = True
+
+# Default snake direction
+direction = 'RIGHT'
+change_to = direction
