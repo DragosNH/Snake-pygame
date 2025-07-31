@@ -34,8 +34,8 @@ snake_body = [
     ]
 
 # Fruit position
-fruit_position = [random.randange(1, (window_x//10) * 10),
-                  random.randange(1, (window_y//10) * 10)]
+fruit_position = [random.randrange(1, (window_x//10) * 10),
+                  random.randrange(1, (window_y//10) * 10)]
 fruit_spawn = True
 
 # Default snake direction
